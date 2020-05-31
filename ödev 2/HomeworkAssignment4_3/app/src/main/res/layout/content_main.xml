@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    app:layout_constraintTop_toBottomOf="@+id/appBarLayout2"
+    android:layout_gravity="center_horizontal"
+    app:layout_editor_absoluteY="100dp"
+    tools:showIn="@layout/activity_main">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        app:columnCount="3"
+        app:rowCount="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView_donut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            android:contentDescription="@string/android_donut"
+            android:onClick="onClickImage"
+            android:src="@drawable/donut_circle" />
+
+        <ImageView
+            android:id="@+id/imageView_froyo"
+            android:contentDescription="@string/android_froyo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickImage"
+            app:layout_columnWeight="1"
+            android:src="@drawable/froyo_circle" />
+
+        <ImageView
+            android:id="@+id/imageView_ice_cream"
+            android:contentDescription="@string/android_ice_cream_sandwich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickImage"
+            app:layout_columnWeight="1"
+            android:src="@drawable/icecream_circle" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

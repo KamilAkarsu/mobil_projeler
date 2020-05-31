@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HomeworkAssignment4_1</string>
+    <string name="chocolate_syrup">Chocolate Syrup</string>
+    <string name="crushed_nut">Crushed Nuts</string>
+    <string name="cherrries">Cherries</string>
+    <string name="sprinkles">Sprinkles</string>
+    <string name="orio_cookie">Orio Cookie Crumbles</string>
+    <string name="toast_button">SHOW TOAST</string>
+</resources>
