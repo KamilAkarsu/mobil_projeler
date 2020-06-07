@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             EditText email = findViewById(R.id.input_email);
             EditText password = findViewById(R.id.input_password);
             loginButton.setOnClickListener(view -> {
-                if (email.getText().toString().equals("admin@cbu.com") && password.getText().toString().equals("admin")) {
+                if (email.getText().toString().equals("admin@cbu.edu.tr") && password.getText().toString().equals("admin")) {
                     Intent intent = new Intent(this, BooksActivity.class);
                     startActivity(intent);
 

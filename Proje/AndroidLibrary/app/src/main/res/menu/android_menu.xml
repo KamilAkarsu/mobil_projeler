@@ -17,4 +17,9 @@
         android:title="Kitap Geri Al"
         app:showAsAction="never"/>
 
+    <item
+        android:id="@+id/out"
+        android:title="Çıkış"
+        app:showAsAction="never"/>
+
 </menu>

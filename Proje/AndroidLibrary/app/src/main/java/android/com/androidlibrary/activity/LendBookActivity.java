@@ -47,6 +47,13 @@ public class LendBookActivity extends AppCompatActivity {
 
         User user = (User) userSpinner.getSelectedItem();
         Book book = (Book) bookSpinner.getSelectedItem();
+
+        List<Lend> lendList = DbContract.LendEntry.query(getApplicationContext(),null,"user = " + user.getSchoolNo() + " AND book = " + book.getId() +" AND delivery_date is null");
+        if(lendList != null && lendList.size() > 0){
+            Snackbar.make(view, "Bu kitap bu öğrencide zaten var.", Snackbar.LENGTH_LONG).show();
+            return;
+        }
+
         Lend lend = new Lend();
         lend.setBookId(book.getId());
         lend.setSchoolNo(user.getSchoolNo());
@@ -60,6 +67,9 @@ public class LendBookActivity extends AppCompatActivity {
         book.setStock(stock);
         DbContract.BookEntry.update(getApplicationContext(), book);
         Snackbar.make(view, "Kayıt yapıldı.", Snackbar.LENGTH_LONG).show();
+        List<Book> bookList = DbContract.BookEntry.query(getApplicationContext(), null, "stock != 0");
+        BookSpinnerAdapter bookAdapter = new BookSpinnerAdapter(this, android.R.layout.simple_spinner_dropdown_item, bookList);
+        bookSpinner.setAdapter(bookAdapter);
 
 
     }

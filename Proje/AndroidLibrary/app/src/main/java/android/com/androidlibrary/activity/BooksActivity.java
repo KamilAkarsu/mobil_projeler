@@ -131,6 +131,11 @@ public class BooksActivity extends AppCompatActivity {
 
                 break;
 
+            case R.id.out:
+                Intent outIntent = new Intent(this, MainActivity.class);
+                startActivity(outIntent);
+                break;
+
         }
 
 

@@ -92,6 +92,10 @@ public class UserBookActivity extends AppCompatActivity {
             case R.id.info:
                 show();
                 break;
+            case R.id.out:
+                Intent outIntent = new Intent(this, MainActivity.class);
+                startActivity(outIntent);
+                break;
 
         }
         return super.onOptionsItemSelected(item);
