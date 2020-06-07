@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CBÜ KÜTÜPHANE</string>
+    <string name="book_name">Kitap Adı</string>
+    <string name="book_author">Kitap Yazarı</string>
+    <string name="book_stock">Adet</string>
+    <string name="save">Kaydet</string>
+    <string name="user_name">Öğrenci İsmi</string>
+    <string name="user_surname">Öğrenci Soyismi</string>
+    <string name="email">Email</string>
+    <string name="user_no">Öğrenci No</string>
+    <string name="user_select">Öğrenci Seç</string>
+    <string name="book_select">Kitap Seç</string>
+    <string name="lend_book">Kitabı Ödünç Ver</string>
+    <string name="search">Ara</string>
+    <string name="back_book">Kitabı Geri Al</string>
+    <string name="password">Şifre</string>
+    <string name="cancel">İptal</string>
+</resources>

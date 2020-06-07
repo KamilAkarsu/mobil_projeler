@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add_user"
+        android:title="Öğrenci Ekle"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/lend_book"
+        android:title="Kitap Ödünç Ver"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/take_book"
+        android:title="Kitap Geri Al"
+        app:showAsAction="never"/>
+
+</menu>
